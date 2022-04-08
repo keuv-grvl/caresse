@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+make lint-quick
+echo
+exit 0 # always succeed at lint before push
