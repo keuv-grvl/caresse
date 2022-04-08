@@ -40,18 +40,20 @@ Plus d'exemples dans `caresse/__main__.py`.
 ## Exécution
 
 Tu dois être dans le bon dossier pour que ça marche, ou mettre un chemin complet :
+
 ```bash
 $ python caresse/__main__.py
 ```
 
 Ça marche quelque soit ton répértoire courant (puisque tu as pip-installé le package) :
+
 ```bash
 $ python -m caresse  # qui va aller lire le fichier `caresse/__main__.py` directement
 ```
 
-
 Si jamais tu veux 2 app indépendantes, tu peux créer un fichier `caresse/vehicle/__main__.py` et
 `caresse/entity/__main__.py`, qui font chacun leur café, et que tu pourras éxecuter avec :
+
 ```bash
 $ python -m caresse.entity
 $ python -m caresse.vehicle
