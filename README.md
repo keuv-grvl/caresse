@@ -18,7 +18,7 @@ pip install -e '.[dev]'  # install additionnal deps
 `-e` permet d'installer le package comme les autres packages, mais avec ses sources dans le dossier courant.
 C'est-à-dire que les modifs dans le code local seront répercutées à l'utilisation du package.
 
-`[dev]` c'est le ptit bonus qui fait plaisir, ça installer des dépendances supplémentaires (ici, de quoi formatter ton
+`[dev]` c'est le ptit bonus qui fait plaisir, ça installe des dépendances supplémentaires (ici, de quoi formatter ton
 code).
 
 
@@ -59,8 +59,8 @@ $ python -m caresse.entity
 $ python -m caresse.vehicle
 ```
 
-Si tu veux 2 executable différents rangés dans `caresse/entity`, tu peux créer des fichiers
-`caresse/entity/exec1.py` et `caresse/entity/mon_programme.py`, que tu executeras via:
+Si tu veux 2 exécutables différents rangés dans `caresse/entity`, tu peux créer des fichiers `caresse/entity/exec1.py`
+et `caresse/entity/mon_programme.py`, que tu executeras via:
 
 ```bash
 python -m caresse.entity.exec1
@@ -75,11 +75,11 @@ Le `Makefile` permet d'automatiser ~~un chiée~~ pléthore de trucs pénibles ma
 
 ```bash
 make  # affiche l'aide
-make help  # affiche l'aide
+make help  # affiche l'aide aussi
 make format  # trie tes imports et formatte ton code
 make lint  # évalue ton code
 make test  # executer les tests (dans le dossier `tests`)
-make format lint test  # faut les 3 d'affilés, s'arrête au 1er qui plante
+make format lint test  # fait les 3 d'affilés, s'arrête au 1er qui plante
 ```
 
 Les `hooks/` sont des scripts executés avant chaque `git commit` et `git push` respectivement, pour s'assurer que le
